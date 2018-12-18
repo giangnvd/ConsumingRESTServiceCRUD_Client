@@ -1,0 +1,26 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>index</title>
+</head>
+<body>
+    <fieldset>
+        <legend>List Book</legend>
+        <table>
+            <tr>
+                <th>Book Id</th>
+                <th>Book Name</th>
+                <th>ISBN</th>
+            </tr>
+
+            @foreach (var b in ViewBag.listBooks)
+            {
+            <tr>
+                <td>@b.BookId</td>
+                <td>@b.Title</td>
+                <td>@b.ISBN</td>
+            </tr>
+            }
+        </table>
+    </fieldset>
+</body>
+</html>
